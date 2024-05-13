@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
@@ -186,38 +185,4 @@ Warsztat Samochodowy WAMAR działa na rynku od 2001 roku, oferując kompleksowe 
 
 
    
-
-</body>
-</html>
- <footer>
-        <p>© 2023 Warsztat WAMAR. Wszelkie prawa zastrzeżone.</p>
-    </footer>
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = strip_tags(trim($_POST["name"]));
-    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $message = trim($_POST["message"]);
-
-    if (empty($name) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Proszę wypełnić formularz ponownie!";
-        exit;
-    }
-
-    $recipient = "TEST"; // Podmień na swój aktualny adres email
-    $subject = "Nowa wiadomość od $name";
-    $email_content = "Imię: $name\n";
-    $email_content .= "Email: $email\n\n";
-    $email_content .= "Wiadomość:\n$message\n";
-
-    $email_headers = "From: $name <$email>";
-
-    if (mail($recipient, $subject, $email_content, $email_headers)) {
-        echo "Dziękujemy! Twoja wiadomość została wysłana.";
-    } else {
-        echo "Oops! Coś poszło nie tak, nie mogliśmy wysłać Twojej wiadomości.";
-    }
-} else {
-    echo "Proszę wypełnić formularz!";
-}
-?>
 
