@@ -175,7 +175,7 @@ Warsztat Samochodowy WAMAR działa na rynku od 2001 roku, oferując kompleksowe 
     <h2>Galeria</h2>
     <div class="gallery-container">
         <img src="https://app.degoo.com/share/wTkcLzfDYgF3lY9SWqE69g" alt="Opis zdjęcia 1">
-        <img src="ścieżka_do_zdjęcia_2.jpg" alt="Opis zdjęcia 2">
+        <img src="https://app.degoo.com/share/wTkcLzfDYgF3lY9SWqE69g" alt="Opis zdjęcia 2">
         <img src="ścieżka_do_zdjęcia_3.jpg" alt="Opis zdjęcia 3">
         <!-- Dodaj więcej zdjęć według potrzeb -->
     </div>
